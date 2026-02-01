@@ -1,0 +1,204 @@
+baseURL: "https://coding-geh.github.io/wakwaw/"
+title: "wakwaw | Software Engineer"
+pagination:
+  pagerSize: 6
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+    menu:
+      main:
+        - identifier: portfolio
+          name: Portfolio
+          url: /portfolio/
+          weight: 10
+        - identifier: blog
+          name: Blog
+          url: /blog/
+          weight: 20
+        - identifier: archives
+          name: Archives
+          url: /archives/
+          weight: 30
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 40
+  id:
+    languageName: "Indonesia"
+    weight: 2
+    taxonomies:
+      category: categories
+      tag: tags
+    menu:
+      main:
+        - identifier: portfolio
+          name: Portofolio
+          url: /portfolio/
+          weight: 10
+        - identifier: blog
+          name: Blog
+          url: /blog/
+          weight: 20
+        - identifier: archives
+          name: Arsip
+          url: /archives/
+          weight: 30
+        - identifier: search
+          name: Cari
+          url: /search/
+          weight: 40
+    params:
+      profileMode:
+        enabled: true
+        title: "Halo, Saya wakwaw 👋"
+        subtitle: |
+          Software Engineer yang passionate dalam membangun solusi digital.
+          Saya suka ngoding, belajar teknologi baru, dan berbagi pengetahuan.
+        imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+        imageWidth: 150
+        imageHeight: 150
+        imageTitle: "wakwaw profile"
+        buttons:
+          - name: Portofolio
+            url: /portfolio/
+          - name: Blog
+            url: /blog/
+      homeInfoParams:
+        Title: "Halo, Saya wakwaw 👋"
+        Content: |
+          Software Engineer yang passionate dalam membangun solusi digital.
+          
+          Saya suka ngoding, belajar teknologi baru, dan berbagi pengetahuan.
+
+params:
+  env: production
+  title: "wakwaw"
+  description: "Personal portfolio dan blog wakwaw - Software Engineer yang passionate dalam membangun solusi digital yang berdampak."
+  keywords: [Blog, Portfolio, Software Engineer, Developer, wakwaw]
+  author: "wakwaw"
+  images: ["https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630&fit=crop"]
+  
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+  
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  assets:
+    favicon: "/favicon.ico"
+    disableHLJS: false
+
+  label:
+    text: "wakwaw"
+    icon: "/apple-touch-icon.png"
+    iconHeight: 35
+
+  profileMode:
+    enabled: true
+    title: "Hi, I'm wakwaw 👋"
+    subtitle: |
+      Software Engineer passionate about building digital solutions.
+      I love coding, learning new technologies, and sharing knowledge.
+    imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+    imageWidth: 150
+    imageHeight: 150
+    imageTitle: "wakwaw profile"
+    buttons:
+      - name: Portfolio
+        url: /portfolio/
+      - name: Blog
+        url: /blog/
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/wakwaw"
+    - name: twitter
+      url: "https://twitter.com/wakwaw"
+    - name: linkedin
+      url: "https://linkedin.com/in/wakwaw"
+    - name: instagram
+      url: "https://instagram.com/wakwaw"
+    - name: youtube
+      url: "https://youtube.com/@wakwaw"
+    - name: email
+      url: "mailto:wakwaw@example.com"
+
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+    linkFullImages: true
+    responsiveImages: true
+
+  editPost:
+    URL: "https://github.com/wakwaw/portfolio/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+markup:
+  highlight:
+    noClasses: false
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    style: dracula
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+  x:
+    disabled: false
+    enableDNT: true
+    simple: true
+  instagram:
+    disabled: false
+    simple: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true
